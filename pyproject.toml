@@ -1,4 +1,4 @@
-# pyproject.toml - Modern Python packaging
+# pyproject.toml - No sqlite3 here!
 [project]
 name = "crash-empire-bot"
 version = "3.0.0"
@@ -10,7 +10,3 @@ dependencies = [
     "python-dotenv>=1.0.0"
 ]
 requires-python = ">=3.9"
-
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
