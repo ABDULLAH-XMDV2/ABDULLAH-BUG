@@ -1,9 +1,9 @@
-# nixpacks.toml - For Railway
+# nixpacks.toml - Railway builder config
 [phases.setup]
 nixPkgs = ["python310", "python310Packages.pip"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["pip install --no-cache-dir -r requirements.txt --timeout=100"]
 
 [phases.start]
 cmd = "python3 main.py"
