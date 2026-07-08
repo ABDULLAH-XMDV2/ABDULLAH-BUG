@@ -1,1 +1,24 @@
 
+# .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+payloads/*.txt
+payloads/*.vcf
+payloads/*.json
+payloads/*.mp4
+*.db
+*.sqlite
+.git
+.gitignore
+.env
+venv
+env
+.venv
