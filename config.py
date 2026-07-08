@@ -5,8 +5,8 @@
 import os
 
 # ===== BOT CONFIGURATION =====
-TOKEN = "YOUR_BOT_TOKEN_HERE"
-ADMIN_IDS = [123456789, 987654321]  # List of admin IDs
+TOKEN = "8945779411:AAE-JGLUItC0WPG9t_uXkKunhOtFDp-qdxE"
+ADMIN_IDS = [6118251763]  # List of admin IDs
 
 # ===== DATABASE =====
 DB_FILE = "empire_bot.db"
