@@ -1,6 +1,6 @@
-# nixpacks.toml - Railway builder config
+# nixpacks.toml - Fixed
 [phases.setup]
-nixPkgs = ["python310", "python310Packages.pip"]
+nixPkgs = ["python310", "python310Packages.pip", "sqlite"]
 
 [phases.install]
 cmds = ["pip install --no-cache-dir -r requirements.txt --timeout=100"]
