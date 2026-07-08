@@ -1,0 +1,14 @@
+# nixpacks.toml - For Railway
+[phases.setup]
+nixPkgs = ["python310", "python310Packages.pip"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.start]
+cmd = "python3 main.py"
+
+[deploy]
+healthcheck = "/"
+restartPolicy = "on-failure"
+restartMaxRetries = 10
