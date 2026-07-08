@@ -1,11 +1,11 @@
-# Dockerfile - For Railway/Render
+# Dockerfile - Railway/Render
 FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install dependencies
+# Install dependencies with timeout
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt --timeout=100
 
 # Copy application
 COPY . .
@@ -13,9 +13,8 @@ COPY . .
 # Create payloads directory
 RUN mkdir -p payloads
 
-# Set environment variables
+# Set environment
 ENV PYTHONUNBUFFERED=1
-ENV BOT_TOKEN=${BOT_TOKEN}
 
 # Start command
 CMD ["python3", "main.py"]
