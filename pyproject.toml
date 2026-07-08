@@ -1,0 +1,16 @@
+# pyproject.toml - Modern Python packaging
+[project]
+name = "crash-empire-bot"
+version = "3.0.0"
+description = "WhatsApp Crash Empire Bot"
+authors = [{name = "HeaNg[Black-Cyber]"}]
+dependencies = [
+    "python-telegram-bot>=20.6",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0"
+]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
