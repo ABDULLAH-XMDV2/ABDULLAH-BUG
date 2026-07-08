@@ -1,5 +1,11 @@
+# requirements.txt - FINAL VERSION
+# Only packages that exist on PyPI!
+
 python-telegram-bot==20.6
 requests==2.31.0
-aiohttp==3.9.1
-sqlite3
 python-dotenv==1.0.0
+
+# NOTE: 
+# - aiohttp is NOT needed (removed)
+# - sqlite3 is built into Python (DON'T install)
+# - datetime, json, os, sys, time, random, string, hashlib, threading are all built-in
